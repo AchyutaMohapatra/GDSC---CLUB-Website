@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dark and White Theme</title>
+	<style>
+		body {
+			background-color: #fff; /* set default background color to white */
+			color: #333; /* set default text color to dark grey */
+		}
+		
+		.dark-mode {
+			background-color: #333; /* set dark mode background color to dark grey */
+			color: #fff; /* set dark mode text color to white */
+		}
+		
+		button {
+			background-color: #4CAF50; /* set button background color */
+			color: #fff; /* set button text color */
+			padding: 1px 2px; /* set button padding */
+			border: none; /* remove button border */
+			cursor: pointer; /* change cursor to pointer on hover */
+		}
+	</style>
+</head>
+<body>
+	<button onclick="toggleMode()">⚫</button>
+	
+	<script>
+		function toggleMode() {
+			var body = document.getElementsByTagName("body")[0];
+			body.classList.toggle("dark-mode"); /* toggle dark mode class on body element */
+		}
+	</script>
+</body>
+</html>
